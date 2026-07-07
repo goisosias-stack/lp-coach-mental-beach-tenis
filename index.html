@@ -518,8 +518,8 @@ footer{background:#040c17;padding:36px 48px;text-align:center;font-size:12px;col
 </section>
 <section class="guarantee" id="garantia">
   <div class="guarantee-inner">
-    <div class="guarantee-seal reveal" style="background:none;border:none;box-shadow:none;border-radius:0;overflow:visible;width:220px;height:220px;display:flex;align-items:center;justify-content:center;padding:0">
-      <svg style="width:220px;height:220px;display:block;margin:0 auto" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <div class="guarantee-seal reveal" style="background:none;border:none;box-shadow:none;border-radius:0;overflow:visible;width:220px;height:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;padding:0">
+      <svg width="220" height="220" style="display:block;margin:0 auto" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fff3c4"/>
@@ -628,6 +628,4 @@ function toggleFaq(btn){const item=btn.closest('.faq-item');const isOpen=item.cl
 const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 window.addEventListener('scroll',()=>{const nav=document.querySelector('nav');nav.style.background=window.scrollY>80?'rgba(4,12,23,.97)':'rgba(8,17,31,.94)';});
-</script>
-</body>
-</html>
+</scrip
